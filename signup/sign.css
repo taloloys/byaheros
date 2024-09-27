@@ -1,0 +1,173 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Base styles */
+body {
+    background-color: #F5F1E5;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: hidden;
+}
+
+/* Left side styles */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Left side styles */
+.left {
+    flex: 1;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right side styles */
+.right {
+  flex: 1;
+  border: 2px solid #F5F1E5;
+  text-align: center; /* Align the content to the left */
+  font-family: 'Outfit', sans-serif; /* Use Outfit font for the right side */
+  padding: 2em;
+}
+
+.back {
+  width: 100%;
+}
+
+/* Form styles */
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-group{
+  text-align: left;
+}
+
+
+.checkbox-group {
+  margin-left: 15px;
+  font-size: small;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust as needed to create space between checkbox and other form groups */
+}
+
+/* Styling for checkbox */
+.checkbox-group input[type="checkbox"] {
+  margin-right: 0;
+  transform: scale(1.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.checkbox-group input[type="checkbox"]:hover {
+  transform: scale(1.6); /* Adjust the scale value for hover effect */
+}
+
+
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px; 
+  padding-left: 1em;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    background-color: #f4ecd4;
+    transition: background-color 2s ease;
+}
+  
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+    background-color: #efebe0;
+    border: 1px solid #F7AF30;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+    background-color: #F7AF30;
+    height: 40px;
+    width: 50%;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid #F7AF30;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* SweetAlert modal styles */
+/* Customize SweetAlert design */
+.container {
+  display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Set container height to full viewport height */
+}
+
+.swal-modal {
+  background-color: #fff; /* Change background color */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.swal-title {
+  color: #f7af30; 
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+.swal-text {
+  color: #333; 
+  font-size: 18px; 
+}
+
+.swal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.swal-button {
+  width: 100px;
+  background-color: #f9c56a; 
+  color: #fff; 
+  font-size: 16px;
+  border: none; 
+  border-radius: 5px;
+  padding: 10px 20px; 
+  margin-top: 20px;
+  transition: .5s ease;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: #f7af30;
+}
